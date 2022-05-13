@@ -774,7 +774,7 @@ contract ERC721C is ERC721A, Ownable, ReentrancyGuard {
     function cutFor(uint amount) private view returns (uint) {
         if(currentDevCutIndex == 0) { return 0; } // no mint
         if(amount == 0) { return 0; } // no amount
-        if(amountOfPartsToBreakMintFundsInto == currentDevCutIndex) { return 0; } // no refund
+        if(amountOfPartsToBreakMintFundsInto <= currentDevCutIndex) { return 0; } // no refund
         
         unchecked {
             uint difference = amountOfPartsToBreakMintFundsInto - currentDevCutIndex;
