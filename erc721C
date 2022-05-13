@@ -846,8 +846,4 @@ contract ERC721C is ERC721A, Ownable, ReentrancyGuard {
     function totalParts() external view virtual returns (uint) {
         return amountOfPartsToBreakMintFundsInto;
     }
-
-    function currentBalance() external view returns (uint) {
-        return address(this).balance;
-    }
 }
