@@ -16,7 +16,7 @@ https://twitter.com/leonidasnft/status/1524811692307365890?s=21&t=Mx4b0wFh8rQSgR
 
 The NFT creator can split the mint funds into different parts over a time period. Upon the first mint event the first time period begins. The owner can call the withdraw function one time within the first waiting period. However, after that first period refunds are issued when the time index changes.
 
-If the creators has rugs on their mind, the NFT investor can unrug themselves depending on how long the time period has been. The amount of ETH that one recieves back is directly rleated to what time period the project is currrently in and how many NFT's they return to the owner.
+If the creators has rugs on their mind, the NFT investor can unrug themselves depending on how long the time period has been. The amount of ETH that one recieves back is directly related to what time period the project is currrently in and how many NFT's they return to the owner.
 
 ```solidity
     uint constant maxSupply = 10000;
