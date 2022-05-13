@@ -6,7 +6,9 @@ The goal of ERC721C somewhat of a fair compromise between NFT project creator an
 
 ## Beta
 
-This code is still in beta and undergoing reviews. Use at your own risk.
+Use at your own risk.
+
+This code is still in beta and undergoing reviews. Ive done about 20 minutes of testing after spending like an hour writing this code. Currently I believe all rounding errors in refunds will go to the project that can be collected at the very end.
 
 ## Motivation
 
