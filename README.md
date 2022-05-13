@@ -27,7 +27,7 @@ If the creators has rugs on their mind, the NFT investor can unrug themselves de
 
 ## Usage
 
-When you are feeling suspesion of a rug call unrugMePlz
+When you are feeling suspicion of a rug call unrugMePlz
 
 ```solidity
     function unrugMePlz(uint[] calldata tokenIds) external nonReentrant {
