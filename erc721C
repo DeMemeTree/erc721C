@@ -729,11 +729,13 @@ contract ERC721C is ERC721A, Ownable, ReentrancyGuard {
     bool private firstWithdrawTaken = false;
 
 
-    constructor(string memory name_, string memory symbol_) ERC721A(name_, symbol_) {
+    constructor(string memory name_, string memory symbol_) ERC721A(name_, symbol_) {}
 
+    receive() external payable {
+        mint(msg.value / mintPrice);
     }
 
-    function mint(uint amount) external payable nonReentrant {
+    function mint(uint amount) public payable nonReentrant {
         require(
             amount + totalSupply() <= maxSupply,
             "Not enough supply"
